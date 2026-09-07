@@ -1,0 +1,22 @@
+{
+  "model": "XGBoost (tuned, alt config)",
+  "selected_over_cv_search_winner_due_to": "search winner (n_estimators=10, lr=0.01) produced a degenerate discrete probability distribution (range 0.417-0.465); alt config gives comparable PR-AUC with a smooth, usable distribution",
+  "best_params": {
+    "learning_rate": 0.1,
+    "max_depth": 5.0,
+    "min_child_weight": 1.0,
+    "gamma": 0.0,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "scale_pos_weight": 7.893422057379731,
+    "n_estimators": 10.0
+  },
+  "chosen_threshold": 0.4321323335170746,
+  "test_prauc": 0.19361507921039778,
+  "test_roc_auc": 0.6296977476113232,
+  "test_precision_default": 0.16535804020100503,
+  "test_recall_default": 0.4808219178082192,
+  "test_precision_tuned": 0.1190065949735607,
+  "test_recall_tuned": 0.9146118721461187,
+  "test_f1_tuned": 0.21060932653383102
+}

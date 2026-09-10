@@ -57,7 +57,7 @@ Bottleneck @ file:///C:/miniconda3/conda-bld/bottleneck_1761938102004/work
 brotlicffi @ file:///C:/miniconda3/conda-bld/brotlicffi_1762950508507/work
 cachetools @ file:///C:/b/abs_fcvwpc5vh9/croot/cachetools_1738224687938/work
 cattrs @ file:///C:/miniconda3/conda-bld/cattrs_1761729120648/work
-certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1779285033994/work/certifi
+certifi @ file:///C:/Users/task_176765924055489/croot/certifi_1767659363027/work/certifi
 cffi @ file:///C:/miniconda3/conda-bld/cffi_1761832792955/work
 chardet @ file:///C:/b/abs_3f08pnpj_d/croot/chardet_1755516293556/work
 charset-normalizer @ file:///C:/miniconda3/conda-bld/charset-normalizer_1761744975868/work
@@ -123,6 +123,7 @@ idna @ file:///C:/miniconda3/conda-bld/idna_1761912043388/work
 ImageIO @ file:///C:/miniconda3/conda-bld/imageio_1762954225001/work
 imagesize @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/imagesize_1729042613392/work
 imbalanced-learn @ file:///C:/b/abs_d1hr2znu7o/croot/imbalanced-learn_1756460314059/work
+imblearn==0.0
 importlib_metadata @ file:///C:/miniconda3/conda-bld/importlib_metadata-suite_1763996638226/work
 incremental @ file:///croot/incremental_1743512672142/work
 inflection @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/inflection_1729054658204/work
@@ -227,7 +228,6 @@ parso @ file:///C:/miniconda3/conda-bld/parso_1762781952168/work
 partd @ file:///C:/b/abs_e1k4ow1dv4/croot/partd_1736803443606/work
 pathspec @ file:///C:/miniconda3/conda-bld/pathspec_1761820745063/work
 patsy @ file:///C:/b/abs_f9h0eiedk0/croot/patsy_1738159949276/work
-pearsonr==0.1.0
 pexpect @ file:///C:/miniconda3/conda-bld/pexpect_1762535956813/work
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
 pillow @ file:///C:/miniconda3/conda-bld/pillow_1762528255883/work
@@ -350,7 +350,6 @@ sphinxcontrib-htmlhelp @ file:///croot/sphinxcontrib-htmlhelp_1744718370019/work
 sphinxcontrib-jsmath @ file:///home/ktietz/src/ci/sphinxcontrib-jsmath_1611920942228/work
 sphinxcontrib-qthelp @ file:///croot/sphinxcontrib-qthelp_1744721051257/work
 sphinxcontrib-serializinghtml @ file:///croot/sphinxcontrib-serializinghtml_1744724097162/work
-spicy==0.16.0
 spyder @ file:///C:/miniconda3/conda-bld/spyder_1763761041704/work
 spyder-kernels @ file:///C:/miniconda3/conda-bld/spyder-kernels_1762167923331/work
 SQLAlchemy @ file:///C:/b/abs_52irs3wj21/croot/sqlalchemy_1756710015498/work

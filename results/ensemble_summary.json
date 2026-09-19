@@ -1,0 +1,46 @@
+{
+  "combination": "LR + RF + XGB",
+  "method": "Soft Voting",
+  "selection_cv_prauc": 0.1957422254071295,
+  "selection_cv_std": 0.008150086895142293,
+  "chosen_threshold": 0.4554684253413878,
+  "test_prauc": 0.195269169188503,
+  "test_roc_auc": 0.6304131424466759,
+  "test_precision_tuned": 0.13465081225925304,
+  "test_recall_tuned": 0.7342465753424657,
+  "test_f1_tuned": 0.22756863855080667,
+  "full_model_comparison": [
+    {
+      "Model": "Ensemble (LR + RF + XGB, Soft Voting)",
+      "Test PR-AUC": 0.195269169188503,
+      "Test ROC-AUC": 0.6304131424466759,
+      "Precision (tuned thr)": 0.13465081225925304,
+      "Recall (tuned thr)": 0.7342465753424657,
+      "F1 (tuned thr)": 0.22756863855080667
+    },
+    {
+      "Model": "Random Forest",
+      "Test PR-AUC": 0.1948964204267717,
+      "Test ROC-AUC": 0.6310235855489459,
+      "Precision (tuned thr)": 0.13431962554329654,
+      "Recall (tuned thr)": 0.7337899543378995,
+      "F1 (tuned thr)": 0.22707361876501342
+    },
+    {
+      "Model": "XGBoost",
+      "Test PR-AUC": 0.19361507921039778,
+      "Test ROC-AUC": 0.6296977476113232,
+      "Precision (tuned thr)": 0.1190065949735607,
+      "Recall (tuned thr)": 0.9146118721461187,
+      "F1 (tuned thr)": 0.21060932653383102
+    },
+    {
+      "Model": "Logistic Regression",
+      "Test PR-AUC": 0.19150248599279746,
+      "Test ROC-AUC": 0.6266241774078998,
+      "Precision (tuned thr)": 0.1288329860077404,
+      "Recall (tuned thr)": 0.7904109589041096,
+      "F1 (tuned thr)": 0.22155382055548445
+    }
+  ]
+}

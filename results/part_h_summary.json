@@ -1,0 +1,124 @@
+{
+  "predictive_performance": [
+    {
+      "Model": "Ensemble (LR+RF+XGB, Soft Voting)",
+      "Test PR-AUC": 0.195269169188503,
+      "Test ROC-AUC": 0.6304131424466759,
+      "Threshold": 0.4554684253413878,
+      "Precision": 0.13465081225925304,
+      "Recall": 0.7342465753424657,
+      "F1": 0.22756863855080667
+    },
+    {
+      "Model": "Random Forest",
+      "Test PR-AUC": 0.1948964204267717,
+      "Test ROC-AUC": 0.6310235855489459,
+      "Threshold": 0.44849102097503235,
+      "Precision": 0.13431962554329654,
+      "Recall": 0.7337899543378995,
+      "F1": 0.22707361876501342
+    },
+    {
+      "Model": "XGBoost",
+      "Test PR-AUC": 0.19361507921039778,
+      "Test ROC-AUC": 0.6296977476113232,
+      "Threshold": 0.4321323335170746,
+      "Precision": 0.1190065949735607,
+      "Recall": 0.9146118721461187,
+      "F1": 0.21060932653383102
+    },
+    {
+      "Model": "Logistic Regression",
+      "Test PR-AUC": 0.19150248599279746,
+      "Test ROC-AUC": 0.6266241774078998,
+      "Threshold": 0.43512174741300497,
+      "Precision": 0.1288329860077404,
+      "Recall": 0.7904109589041096,
+      "F1": 0.22155382055548445
+    }
+  ],
+  "computational_efficiency": [
+    {
+      "Model": "Logistic Regression",
+      "Fit time (s)": 4.224877900000138,
+      "Inference time (s, full test set)": 0.0030343999999331572,
+      "Inference time (s per 1000 rows)": 0.0001499431733919631
+    },
+    {
+      "Model": "Random Forest",
+      "Fit time (s)": 4.250372299999981,
+      "Inference time (s, full test set)": 0.10807219999992412,
+      "Inference time (s per 1000 rows)": 0.005340327123581763
+    },
+    {
+      "Model": "XGBoost",
+      "Fit time (s)": 0.16814369999997325,
+      "Inference time (s, full test set)": 0.0057162000000516855,
+      "Inference time (s per 1000 rows)": 0.00028246281563728247
+    },
+    {
+      "Model": "Ensemble (LR+RF+XGB)",
+      "Fit time (s)": 8.643393900000092,
+      "Inference time (s, full test set)": 0.11682279999990897,
+      "Inference time (s per 1000 rows)": 0.005772733112611008
+    }
+  ],
+  "overfitting_check": [
+    {
+      "Model": "XGBoost",
+      "Train PR-AUC": 0.20655912617688585,
+      "Test PR-AUC": 0.19361507921039778,
+      "Gap (train - test)": 0.01294404696648807
+    },
+    {
+      "Model": "Random Forest",
+      "Train PR-AUC": 0.20672981922547545,
+      "Test PR-AUC": 0.1948964204267717,
+      "Gap (train - test)": 0.011833398798703765
+    },
+    {
+      "Model": "Logistic Regression",
+      "Train PR-AUC": 0.19276958886450551,
+      "Test PR-AUC": 0.19150248599279746,
+      "Gap (train - test)": 0.001267102871708059
+    }
+  ],
+  "interpretability_top_features": {
+    "logistic_regression_top10": {
+      "num__number_inpatient": 0.3893922898563844,
+      "nom__diag_1_group_Respiratory": 0.19739112490752433,
+      "nom__medical_specialty_Cardiology": 0.17652071533435698,
+      "ord__age": 0.0679945344356162,
+      "nom__diag_1_group_Digestive": 0.0659935646530989,
+      "num__number_emergency": 0.05722868914787449,
+      "nom__diag_1_group_Diabetes": 0.05430984303009234,
+      "nom__medical_specialty_Missing": 0.04836174344603361,
+      "nom__diag_1_group_Injury": 0.04656344825950347,
+      "nom__diag_1_group_Circulatory": 0.042118976801690355
+    },
+    "random_forest_top10": {
+      "num__number_inpatient": 0.7407160459932319,
+      "num__number_emergency": 0.07434411148553333,
+      "ord__age": 0.06841748635290847,
+      "nom__diag_1_group_Respiratory": 0.01923941911974968,
+      "num__number_outpatient": 0.016159149880326445,
+      "nom__medical_specialty_Cardiology": 0.008939118874456392,
+      "nom__diag_1_group_Circulatory": 0.008152996161673027,
+      "nom__diag_1_group_Diabetes": 0.004502540650493181,
+      "nom__A1Cresult_Missing": 0.004319446588208658,
+      "nom__medical_specialty_Missing": 0.004314032386356805
+    },
+    "xgboost_shap_top10": {
+      "num__number_inpatient": 0.16878272593021393,
+      "ord__age": 0.05209420248866081,
+      "nom__diag_1_group_Respiratory": 0.0241019856184721,
+      "num__number_emergency": 0.020780006423592567,
+      "nom__diag_1_group_Circulatory": 0.011562318541109562,
+      "nom__medical_specialty_Cardiology": 0.010061551816761494,
+      "num__number_outpatient": 0.009585289284586906,
+      "nom__admission_source_id_7": 0.007259323261678219,
+      "nom__diag_1_group_Diabetes": 0.005829700734466314,
+      "nom__diag_1_group_Digestive": 0.0037410224322229624
+    }
+  }
+}
